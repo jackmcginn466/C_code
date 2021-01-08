@@ -189,7 +189,7 @@ matrix& matrix::operator=(matrix& mat)
 {
     std::cout << "Copy assignment called\n";
     if (&mat == this) { return *this; } // no self assignment
-    // First delete this object’s array
+    // First delete this objectâ€™s array
     delete[] matrix_data; matrix_data = nullptr; rows = 0; columns = 0;
     // Now copy size and declare new array
     rows = mat.get_rows(); columns = mat.get_cols();
